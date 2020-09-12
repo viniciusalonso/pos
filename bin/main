@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+require_relative '../text_files_manager'
+
+names = [
+  "Chase",
+  "Rennie",
+  "Franklin",
+  "Huynh",
+  "England",
+  "Lugo",
+  "Rogrigues",
+  "Betts",
+  "Cummings",
+  "Irwin",
+  "Nixon",
+  "Higgins",
+  "Cooky",
+  "Ross",
+  "Eaton",
+  "Fountain"
+]
+
+Dir.mkdir("blocos") unless Dir.exists?("blocos")
+
+manager = TextFilesManager.new names: names
+manager.create_text_files
+
+manager.print
