@@ -23,7 +23,6 @@ names = [
 
 Dir.mkdir("blocos") unless Dir.exists?("blocos")
 
-manager = TextFilesManager.new names: names
+manager = TextFilesManager.new(names: names)
 manager.create_text_files
-
-manager.print
+manager.print_text_files
