@@ -9,7 +9,7 @@ class TextFilesManager
   end
 
   def create_text_files
-    names.each_with_index do |current_name, index|
+    names.each.with_index(1) do |current_name, index|
       next_name = names[index + 1]
       text_file = TextFileCreator.new(from: current_name, to: next_name, number: index)
       text_file.create
