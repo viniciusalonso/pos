@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require_relative '../messages_scan'
+
+names = [
+  "Betts",
+  "Chase",
+  "Cook",
+  "Cummings",
+  "Eaton",
+  "England",
+  "Fountain",
+  "Franklin",
+  "Higgins",
+  "Huynh",
+  "Irwin",
+  "Lugo",
+  "Nixon",
+  "Rennie",
+  "Rodrigues",
+  "Ross"
+]
+
+MessagesScan.new(names: names).scan_all_messages
